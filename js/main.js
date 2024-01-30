@@ -12,6 +12,7 @@ const app = Vue.createApp({
       if (this.newItem === '') return;
       let todo = {
         item: this.newItem,
+        isDone: false, // task完了、未完了の真偽地
       };
       this.todos.push(todo);
       this.newItem = '';
