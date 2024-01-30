@@ -7,11 +7,14 @@ const app = Vue.createApp({
   }),
   methods: {
     addItem: function (event) {
-      console.log('Clicked!');
+      // console.log('Clicked!');
+      // 下記の記述がないとタスクが未入力でも配列に追加されてしまう
+      if (this.newItem === '') return;
       let todo = {
         item: this.newItem,
       };
       this.todos.push(todo);
+      this.newItem = '';
     },
   },
 });
