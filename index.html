@@ -10,12 +10,14 @@
   <body>
     <div id="app">
       <h1>TODOリスト</h1>
-      <!--イベントハンドラがsubmitに邪魔されている -->
       <form v-on:submit.prevent>
-        <input type="text" />
+        <!-- プロパティをデータバインディングさせる -->
+        <input type="text" v-model="newItem" />
         <!-- イベントハンドラの追加 -->
         <button v-on:click="addItem">Add</button>
       </form>
+
+      <pre>{{ $data}}</pre>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>
