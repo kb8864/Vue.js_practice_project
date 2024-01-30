@@ -1,7 +1,4 @@
 const app = Vue.createApp({
-  data: () => ({
-    message: 'Hello world',
-  }),
+  data: () => ({}),
 });
-
 app.mount('#app');
