@@ -17,6 +17,14 @@ const app = Vue.createApp({
       this.todos.push(todo);
       this.newItem = '';
     },
+    deleteItem: function (index) {
+      //引数がindexなのは、deleteItemメソッドから見たときにどの削除ボタンが押されたか判別する必要があり、そこで deleteItemメソッドの引数に配列のindexを渡す
+      console.log('delete');
+      console.log('index');
+
+      //作成したタスクは配列に追加されるので、配列からから要素を削除する.spliceを使用
+      this.todos.splice(index, 1);
+    },
   },
 });
 app.mount('#app');

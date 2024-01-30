@@ -18,12 +18,14 @@
       </form>
 
       <ul>
-        <li v-for="todo in todos">
+        <li v-for="(todo, index) in todos">
           <!-- チェックボックスとデータをデータバインディングができるように設定 -->
           <input type="checkbox" v-model="todo.isDone" />
 
           <!-- class属性をデータバインディングするにはv-bind:classを使用する -->
           <span v-bind:class="{ done: todo.isDone }">{{ todo.item }}</span>
+          <!--削除ボタンに押下時のイベントハンドラ追加-->
+          <button v-on:click="deleteItem(index)">delete</button>
         </li>
       </ul>
 
