@@ -18,11 +18,13 @@
       </form>
 
       <ul>
-        <il v-for="todo in todos">
+        <li v-for="todo in todos">
           <!-- チェックボックスとデータをデータバインディングができるように設定 -->
           <input type="checkbox" v-model="todo.isDone" />
-          <span>{{ todo.item }}</span><br />
-        </il>
+
+          <!-- class属性をデータバインディングするにはv-bind:classを使用する -->
+          <span v-bind:class="{ done: todo.isDone }">{{ todo.item }}</span>
+        </li>
       </ul>
 
       <pre>{{ $data}}</pre>
