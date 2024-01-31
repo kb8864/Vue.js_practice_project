@@ -1,0 +1,5 @@
+/* v-cloakをCSSセレクタとして使うには
+ブランケットで囲うというVue,jsのルール */
+[v-cloak] {
+  display: none;
+}
