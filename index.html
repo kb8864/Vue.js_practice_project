@@ -9,8 +9,10 @@
   </head>
   <body>
     <div id="app">
-      <!-- インスタンスのコンパイルが終了するまで非表示にしたい要素に v-cloakディレクティブを設定 -->
-      <p v-cloak>{{ message }}</p>
+      <p>{{ message }}</p>
+
+      <h2>v-text</h2>
+      <p v-text="message"></p>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>
