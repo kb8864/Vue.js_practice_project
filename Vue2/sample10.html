@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ダンスチーム検索・登録アプリ</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="showRegistrationForm = !showRegistrationForm">
+        登録フォームを表示
+      </button>
+      <button @click="showSearchResults = !showSearchResults">
+        検索結果を表示
+      </button>
+
+      <div v-show="showRegistrationForm">
+        <h2>ダンスチーム登録</h2>
+        <!-- 登録フォームの内容 -->
+        <p>フォームをここに配置</p>
+        <textarea v-model="memo" cols="30" rows="10"></textarea>
+        <div v-bind:inner-html.prop="memo | nl2br"></div>
+      </div>
+
+      <div v-show="showSearchResults">
+        <button @click="isActive = !isActive">チームのHPはここから</button>
+        <div v-show="isActive" :style="{color: 'red'}">
+          HPはここをクリック！
+        </div>
+        <div v-show="!isActive" :style="{color: 'gray'}">
+          ...非アクティブ...
+        </div>
+
+        <!-- 検索結果の表示 -->
+        <p>検索結果をここに配置</p>
+      </div>
+    </div>
+
+    <script>
+      Vue.filter('nl2br', function (value) {
+        if (typeof value !== 'string') {
+          return value;
+        }
+        return value.replace(/\r?\n/g, '<br />');
+      });
+
+      new Vue({
+        el: '#app',
+        data: {
+          showRegistrationForm: false,
+          showSearchResults: false,
+          isActive: true,
+        },
+      });
+    </script>
+  </body>
+</html>

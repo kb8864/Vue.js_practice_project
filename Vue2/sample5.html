@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11/dist/vue.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <textarea v-model="memo" cols="30" rows="10"></textarea>
+      <div v-bind:inner-html.prop="memo | nl2br"></div>
+    </div>
+    <script>
+      Vue.filter('nl2br', function (value) {
+        if (typeof value !== 'string') {
+          return value;
+        }
+        return value.replace(/\r?\n/g, '<br />');
+      });
+
+      new Vue({
+        el: '#app',
+        data: {
+          memo: '',
+        },
+      });
+    </script>
+  </body>
+</html>

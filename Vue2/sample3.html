@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11/dist/vue.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="flg = !flg">切り替え</button>
+      <p v-if="" flg></p>
+      メソッド: {{ method() }} <br />
+      算出プロパティ: {{ prop }}
+    </div>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          flg: true,
+        },
+        methods: {
+          method() {
+            return new Date().toLocaleString();
+          },
+        },
+
+        computed: {
+          prop() {
+            return new Date().toLocaleString();
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
