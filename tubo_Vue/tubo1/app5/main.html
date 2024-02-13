@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+    <!-- CDN から npm パッケージを使う -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2/dist/vue.global.js"></script>
+
+</head>
+<body>
+  <div id="app">
+    {{price}}円<span v-if="price < 1000">セール実施中！</span><br>
+    <span v-bind:class="{'last-stock': stock=== 1}" v-if="stock >= 1">残りは{{stock}}個です！お早めに！</span>
+    
+    <span v-else>在庫切れです。</span><br>
+    <!-- イベントハンドリングボタンの追加 -->
+    <button v-on:click="decreaseStock" v-if="stock > 0">購入する</button>  </div>
+    <script src="main.js"></script>
+</body>
+</html>
