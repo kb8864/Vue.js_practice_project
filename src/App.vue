@@ -1,3 +1,5 @@
+<!-- <script>要素にはsetup属性を付与する -->
+
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
@@ -13,7 +15,7 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main>
-    <TheWelcome />
+      <TheWelcome/>
   </main>
 </template>
 
