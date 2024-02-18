@@ -3,6 +3,9 @@ import { ref, reactive  } from 'vue'// refもインポートする
 // Ref変数として用意されたアドレスをアンカータグに反映させる
 const url = ref('https://ja.vuejs.org/guide/introduction')
 
+const imag = ref('width')
+const value = ref(300)
+
 // reactiveで複数の属性を管理するオブジェクトを作成
 const attrs = reactive({
   size: 12,
@@ -23,4 +26,5 @@ const attrs = reactive({
         <input type="text" id="message" v-bind="attrs" />
       </form>
   </div>
+  <img src="https://www.study.gr.jp/material/bgpoint_jpg/downloadfile/image_balloon.jpg" v-bind:[imag]="value">
 </template>
