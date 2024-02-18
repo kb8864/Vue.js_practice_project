@@ -1,12 +1,13 @@
 <!-- <script>要素にはsetup属性を付与する -->
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import FirstApp from './components/FirstApp.vue'
-import Computed from './components/Computed.vue'
-import MethodCompute from './components/MethodCompute.vue'
-
+// import FirstApp from './components/FirstApp.vue'
+// import Computed from './components/Computed.vue'
+// import MethodCompute from './components/MethodCompute.vue'
+import HtmlBasic from './components/HtmlBasic.vue'
+import Bind from './components/Bind.vue'
 
 </script>
 
@@ -18,10 +19,13 @@ import MethodCompute from './components/MethodCompute.vue'
     <!-- wrapper divをHelloWorldコンポーネントのみでなく、他のコンポーネントも含むように調整 -->
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <FirstApp />
-      <Computed />
-      <MethodCompute />
+      <!-- <HelloWorld msg="You did it!" /> -->
+      <!-- <FirstApp /> -->
+      <!-- <Computed />
+      <MethodCompute /> -->
+      <HtmlBasic />
+      <Bind />
+
     </div>
 
   </header>
