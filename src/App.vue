@@ -5,6 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
 import FirstApp from './components/FirstApp.vue'
 import Computed from './components/Computed.vue'
+import MethodCompute from './components/MethodCompute.vue'
 
 
 </script>
@@ -20,6 +21,7 @@ import Computed from './components/Computed.vue'
       <HelloWorld msg="You did it!" />
       <FirstApp />
       <Computed />
+      <MethodCompute />
     </div>
 
   </header>

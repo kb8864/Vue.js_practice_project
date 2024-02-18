@@ -8,6 +8,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import FirstApp from './components/FirstApp.vue'
 import Computed from './components/Computed.vue'
+import MethodCompute from './components/MethodCompute.vue'
+
 
 // Vueアプリの起動。
 // createApp＝アプリインスタンス（vueアプリを管理するためのオブジェクト）の生成。
