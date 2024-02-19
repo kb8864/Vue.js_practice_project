@@ -2,7 +2,10 @@
 
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+// import TheWelcome from './components/TheWelcome.vue'
+
+import Style from './components/Style.vue'
+
 </script>
 
 <template>
@@ -11,12 +14,13 @@ import TheWelcome from './components/TheWelcome.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <Style />
     </div>
   </header>
 
-  <main>
+  <!-- <main>
       <TheWelcome/>
-  </main>
+  </main> -->
 </template>
 
 <style scoped>

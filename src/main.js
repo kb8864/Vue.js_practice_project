@@ -5,6 +5,7 @@ import { createApp } from 'vue'
 
 // アプリ本体のインポート
 import App from './App.vue'
+import Style from './components/Style.vue'
 
 // Vueアプリの起動。
 // createApp＝アプリインスタンス（vueアプリを管理するためのオブジェクト）の生成。
