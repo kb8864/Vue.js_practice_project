@@ -9,6 +9,7 @@
 import HtmlBasic from './components/HtmlBasic.vue'
 import Bind from './components/Bind.vue'
 
+import Style from './components/Style.vue'
 </script>
 
 <template>
@@ -25,7 +26,7 @@ import Bind from './components/Bind.vue'
       <MethodCompute /> -->
       <HtmlBasic />
       <Bind />
-
+      <Style />
     </div>
 
   </header>
