@@ -1,26 +1,25 @@
 <!-- <script>要素にはsetup属性を付与する -->
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-
-import Style from './components/Style.vue'
+// import Style from './components/Style.vue'
+import Bind from './components/Bind.vue'
+import Event from './components/Event.vue'
 
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <Style />
+      <Bind />
+      <!-- <Style /> -->
+      <Event />
     </div>
   </header>
 
-  <!-- <main>
-      <TheWelcome/>
-  </main> -->
 </template>
 
 <style scoped>
