@@ -12,7 +12,7 @@ import ModelBasic from './components/ModelBasic.vue'
 import Bind from './components/Bind.vue'
 import ModelRadio from './components/ModelRadio.vue'
 import CheckBox from './components/CheckBox.vue'
-
+import Calendar from './components/Calendar.vue'
 
 // import Event from './components/Event.vue'
 // import Event2 from './components/Event2.vue'

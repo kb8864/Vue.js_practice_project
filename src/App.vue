@@ -9,6 +9,7 @@ import ModelBasic from './components/ModelBasic.vue'
 import ModelRadio from './components/ModelRadio.vue'
 import CheckBox from './components/CheckBox.vue'
 
+import Calendar from './components/Calendar.vue'
 
 // import Event from './components/Event.vue'
 // import Event2 from './components/Event2.vue'
@@ -24,6 +25,7 @@ import CheckBox from './components/CheckBox.vue'
     <div class="wrapper">
       <!-- <Esckey /><br> -->
       <Bind />
+      <Calendar />
       <!-- <Style /> -->
       <!-- <Event /> -->
       <!-- <BindDelete /> -->
