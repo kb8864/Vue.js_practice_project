@@ -8,7 +8,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 // import FirstApp from './components/FirstApp.vue'
 import HtmlBasic from './components/HtmlBasic.vue'
-import Bind from './components/Bind.vue'
+// import Bind from './components/Bind.vue'
 import Style from './components/Style.vue'
 
 // import Computed from './components/Computed.vue'

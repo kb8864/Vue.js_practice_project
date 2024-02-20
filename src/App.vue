@@ -7,7 +7,7 @@
 // import Computed from './components/Computed.vue'
 // import MethodCompute from './components/MethodCompute.vue'
 import HtmlBasic from './components/HtmlBasic.vue'
-import Bind from './components/Bind.vue'
+// import Bind from './components/Bind.vue'
 
 import Style from './components/Style.vue'
 </script>
@@ -18,14 +18,10 @@ import Style from './components/Style.vue'
 
     <!-- wrapperクラスを使用している<div>タグがHelloWorldコンポーネントを囲んでいるため、この<div>タグ内にFirstAppとComputedを移動させる -->
     <!-- wrapper divをHelloWorldコンポーネントのみでなく、他のコンポーネントも含むように調整 -->
-
     <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-      <!-- <FirstApp /> -->
       <!-- <Computed />
       <MethodCompute /> -->
       <HtmlBasic />
-      <Bind />
       <Style />
     </div>
 
