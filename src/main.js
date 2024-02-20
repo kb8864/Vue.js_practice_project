@@ -8,6 +8,7 @@ import App from './App.vue'
 // import Style from './components/Style.vue'
 import Bind from './components/Bind.vue'
 import Event from './components/Event.vue'
+import BindDelete from './components/BindDelete.vue'
 
 // Vueアプリの起動。
 // createApp＝アプリインスタンス（vueアプリを管理するためのオブジェクト）の生成。

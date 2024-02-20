@@ -6,6 +6,7 @@
 // import Style from './components/Style.vue'
 import Bind from './components/Bind.vue'
 import Event from './components/Event.vue'
+import BindDelete from './components/BindDelete.vue'
 
 </script>
 
@@ -17,6 +18,7 @@ import Event from './components/Event.vue'
       <Bind />
       <!-- <Style /> -->
       <Event />
+      <BindDelete />
     </div>
   </header>
 
