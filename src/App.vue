@@ -8,8 +8,9 @@
 // import MethodCompute from './components/MethodCompute.vue'
 import HtmlBasic from './components/HtmlBasic.vue'
 // import Bind from './components/Bind.vue'
+import Cloak from './components/Cloak.vue'
 
-import Style from './components/Style.vue'
+// import Style from './components/Style.vue'
 </script>
 
 <template>
@@ -24,6 +25,8 @@ import Style from './components/Style.vue'
       <HtmlBasic />
       <Style />
     </div>
+
+    <Cloak />
 
   </header>
 </template>

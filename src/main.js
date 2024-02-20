@@ -9,8 +9,9 @@ import App from './App.vue'
 // import FirstApp from './components/FirstApp.vue'
 import HtmlBasic from './components/HtmlBasic.vue'
 // import Bind from './components/Bind.vue'
-import Style from './components/Style.vue'
+import Cloak from './components/Cloak.vue'
 
+// import Style from './components/Style.vue'
 // import Computed from './components/Computed.vue'
 // import MethodCompute from './components/MethodCompute.vue'
 
