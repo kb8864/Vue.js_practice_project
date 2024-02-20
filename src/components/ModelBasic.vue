@@ -8,5 +8,6 @@ const myName = ref('ゲスト')
     <label for="name">氏名：</label>
     <input type="text" id="name" v-model="myName" />
   </form>
-  <div>こんにちは、{{ myName }} さん！</div>
+  <div>こんにちは、{{ myName }} さん！</div><br>
+  
 </template>

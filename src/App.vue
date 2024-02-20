@@ -6,6 +6,8 @@
 // import Style from './components/Style.vue'
 import Bind from './components/Bind.vue'
 import ModelBasic from './components/ModelBasic.vue'
+import ModelRadio from './components/ModelRadio.vue'
+
 
 // import Event from './components/Event.vue'
 // import Event2 from './components/Event2.vue'
@@ -27,7 +29,8 @@ import ModelBasic from './components/ModelBasic.vue'
       <!-- <Event2 /> -->
 
     </div>
-    <ModelBasic />
+    <ModelBasic /><br>
+    <ModelRadio />
   </header>
 
 </template>
