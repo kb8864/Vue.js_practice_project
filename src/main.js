@@ -6,9 +6,11 @@ import { createApp } from 'vue'
 // アプリ本体のインポート
 import App from './App.vue'
 // import Style from './components/Style.vue'
+import Esckey from './components/Esckey.vue'
+
 import Bind from './components/Bind.vue'
-import Event from './components/Event.vue'
-import Event2 from './components/Event2.vue'
+// import Event from './components/Event.vue'
+// import Event2 from './components/Event2.vue'
 // import BindDelete from './components/BindDelete.vue'
 
 // Vueアプリの起動。

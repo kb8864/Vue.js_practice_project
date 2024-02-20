@@ -5,10 +5,10 @@
 // import TheWelcome from './components/TheWelcome.vue'
 // import Style from './components/Style.vue'
 import Bind from './components/Bind.vue'
-import Event from './components/Event.vue'
-import Event2 from './components/Event2.vue'
-
+// import Event from './components/Event.vue'
+// import Event2 from './components/Event2.vue'
 // import BindDelete from './components/BindDelete.vue'
+import Esckey from './components/Esckey.vue'
 
 </script>
 
@@ -17,11 +17,12 @@ import Event2 from './components/Event2.vue'
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
     
     <div class="wrapper">
+      <Esckey /><br>
       <Bind />
       <!-- <Style /> -->
-      <Event />
+      <!-- <Event /> -->
       <!-- <BindDelete /> -->
-      <Event2 />
+      <!-- <Event2 /> -->
 
     </div>
   </header>

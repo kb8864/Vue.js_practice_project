@@ -29,6 +29,6 @@ const attrs = reactive({
         <input type="text" id="message" v-bind="attrs" />
     </form> -->
   </div><br>
-  <input v-model = "msg">
+  <!-- <input v-model = "msg"> -->
   <!-- <img src="https://www.study.gr.jp/material/bgpoint_jpg/downloadfile/image_balloon.jpg" v-bind="imageAttrs"> -->
 </template>
