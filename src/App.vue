@@ -7,6 +7,7 @@
 import Bind from './components/Bind.vue'
 import ModelBasic from './components/ModelBasic.vue'
 import ModelRadio from './components/ModelRadio.vue'
+import CheckBox from './components/CheckBox.vue'
 
 
 // import Event from './components/Event.vue'
@@ -30,7 +31,8 @@ import ModelRadio from './components/ModelRadio.vue'
 
     </div>
     <ModelBasic /><br>
-    <ModelRadio />
+    <ModelRadio /><br>
+    <CheckBox />
   </header>
 
 </template>
