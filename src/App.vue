@@ -10,7 +10,7 @@ import Bind from './components/Bind.vue'
 // import CheckBox from './components/CheckBox.vue'
 
 // import Calendar from './components/Calendar.vue'
-import Upload from './components/Upload.vue'
+// import Upload from './components/Upload.vue'
 
 // import Event from './components/Event.vue'
 // import Event2 from './components/Event2.vue'
@@ -26,8 +26,8 @@ import Upload from './components/Upload.vue'
     <div class="wrapper">
       <!-- <Esckey /><br> -->
       <Bind />
-      <Calendar />
-      <Upload />
+      <!-- <Calendar /> -->
+      <!-- <Upload /> -->
       <!-- <Style /> -->
       <!-- <Event /> -->
       <!-- <BindDelete /> -->
@@ -35,9 +35,9 @@ import Upload from './components/Upload.vue'
 
     </div>
     
-    <ModelBasic /><br>
+    <!-- <ModelBasic /><br>
     <ModelRadio /><br>
-    <CheckBox />
+    <CheckBox /> -->
   </header>
 
 </template>

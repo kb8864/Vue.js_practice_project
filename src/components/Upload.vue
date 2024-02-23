@@ -18,13 +18,19 @@ const onclick = () =>{
     method: 'POST',
     body: form
     })
-    // ６、then()メソッドを使って、成功ときはレスポンスデータを取得
+    // ６、then()メソッドを使って、成功ときは(（バイナリデータとして)レスポンスデータを取得
     .then(function(response){
-      return response.text()
+      // return response.text()
+      return response.blob()// テキストではなく、blobとしてレスポンスを取得
     })
     // ７、ページに結果を表する
-    .then(function(text){
-      result.value = text
+    // .then(function(text){
+    //   result.value = text
+    // })
+    .then(function(blob){
+      // 取得したバイナリデータ（Blob）からブラウザが表示可能なURLを生成するために、URL.createObjectURL()メソッドを使用
+      const url = URL.createObjectURL(blob)
+      result.value = url
     })
 }
 </script>
@@ -35,5 +41,7 @@ const onclick = () =>{
     <input type="file" ref="upfile">
     <input type="button" value="アップロード" v-on:click="onclick">
   </form>
-  <div>{{ result }}</div>
+  <div v-if="result">
+    <img :src="result" alt="" />
+  </div>
 </template>
