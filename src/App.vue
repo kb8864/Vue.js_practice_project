@@ -5,11 +5,12 @@
 // import TheWelcome from './components/TheWelcome.vue'
 // import Style from './components/Style.vue'
 import Bind from './components/Bind.vue'
-import ModelBasic from './components/ModelBasic.vue'
-import ModelRadio from './components/ModelRadio.vue'
-import CheckBox from './components/CheckBox.vue'
+// import ModelBasic from './components/ModelBasic.vue'
+// import ModelRadio from './components/ModelRadio.vue'
+// import CheckBox from './components/CheckBox.vue'
 
-import Calendar from './components/Calendar.vue'
+// import Calendar from './components/Calendar.vue'
+import Upload from './components/Upload.vue'
 
 // import Event from './components/Event.vue'
 // import Event2 from './components/Event2.vue'
@@ -26,12 +27,14 @@ import Calendar from './components/Calendar.vue'
       <!-- <Esckey /><br> -->
       <Bind />
       <Calendar />
+      <Upload />
       <!-- <Style /> -->
       <!-- <Event /> -->
       <!-- <BindDelete /> -->
       <!-- <Event2 /> -->
 
     </div>
+    
     <ModelBasic /><br>
     <ModelRadio /><br>
     <CheckBox />
